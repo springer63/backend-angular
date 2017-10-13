@@ -1,0 +1,46 @@
+<h3>UC DEMO</h3>
+<script type="text/ng-template" id="nodes_renderer.html">
+    <div ui-tree-handle class="tree-node tree-node-content">
+        <a class="btn btn-success btn-xs" ng-if="node.nodes && node.nodes.length > 0" data-nodrag ng-click="toggle(this)">
+            <span class="glyphicon" ng-class="{ 'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span>
+        </a>
+        {{node.title}}
+        <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)">
+            <span class="glyphicon glyphicon-remove"></span>
+        </a>
+        <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;">
+            <span class="glyphicon glyphicon-plus"></span>
+        </a>
+    </div>
+    <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+        <li ng-repeat="node in node.nodes" ui-tree-node data-collapsed="true" data-expand-on-hover="true" ng-include="'nodes_renderer.html'"></li>
+    </ol>
+</script>
+<div ng-controller="demoController" >
+    <!-- edit page -->
+    <div class="panel panel-default" ng-show="uc.editStatus==1 || uc.editStatus == 2">
+        <div  class="panel-body">
+            <form name="editForm" role="form" class="form-horizontal" ng-submit="uc.save(editForm)">
+                <span>
+                <div class="form-group" ng-fields="uc.gridOptions.columnDefs" ng-model="uc.editObj">
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-rounded" />
+                    </div>
+                </div>
+                </span>
+                <div class="form-group">
+                    <div class="col-sm-6 control-label">
+                        <input type="submit" class="btn btn-oval btn-primary" value="保存"/>
+                        <button ng-click="uc.cancel(editForm)" class="btn btn-oval btn-default" type="button">取消</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div ui-tree id="tree-root-boolean">
+        <ol ui-tree-nodes ng-model="list">
+            <li ng-repeat="node in list" ui-tree-node data-collapsed="true" data-expand-on-hover="true" ng-include="'nodes_renderer.html'"></li>
+        </ol>
+    </div>
+</div>

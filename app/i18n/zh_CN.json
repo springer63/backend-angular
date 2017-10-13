@@ -1,0 +1,110 @@
+{
+  "dashboard": {
+    "WELCOME": "欢迎进入 {{appName}}"
+  },
+  "topbar": {
+    "messages": {
+      "UNREAD": "未读信息",
+      "MORE": "更多信息"
+    },
+    "search": {
+      "PLACEHOLDER": "请输入"
+    },
+    "notification": {
+      "MORE": "更多提示"
+    }
+  },
+  "offsidebar": {
+    "setting": {
+      "SETTINGS": "设置",
+      "THEMES": "主题",
+      "layout": {
+        "FIXED": "固定",
+        "COLLAPSED": "折叠"
+      }
+    },
+    "chat": {
+      "CONNECTIONS": "连接人数",
+      "SEARCH": "搜索联系人",
+      "ONLINE": "在线",
+      "OFFLINE": "离线",
+      "LOAD_MORE": "加载更多",
+      "TASK_COMPLETION": "完成任务",
+      "QUOTA": "上传"
+    }
+  },
+  "sidebar": {
+    "WELCOME": "欢迎",
+    "heading": {
+      "HEADER": "Main Navigation",
+      "COMPONENTS": "Components",
+      "MORE": "More"
+    },
+    "nav": {
+      "DASHBOARD": "Dashboard",
+      "WIDGETS": "Widgets",
+      "WIDGETS": "Widgets",
+      "DOCUMENTATION": "Documentation",
+      "element": {
+        "ELEMENTS": "Elements",
+        "BUTTON": "Button",
+        "COLOR": "Colors",
+        "NOTIFICATION": "Notification",
+        "INTERACTION": "Interaction",
+        "SPINNER": "Spinner",
+        "ANIMATION": "Animation",
+        "DROPDOWN": "Dropdown",
+        "PANEL": "Panel",
+        "PORTLET": "Portlet",
+        "GRID": "Grid",
+        "GRID_MASONRY": "Grid Masonry",
+        "TYPO": "Typography",
+        "FONT_ICON": "Font Icons",
+        "WEATHER_ICON": "Weather Icons"
+      },
+      "form": {
+        "FORM": "Forms",
+        "STANDARD": "Standard",
+        "EXTENDED": "Extended",
+        "VALIDATION": "Validation",
+        "WIZARD": "Wizard",
+        "UPLOAD": "Upload"
+      },
+      "chart": {
+        "CHART": "Charts",
+        "FLOT": "Flot",
+        "RADIAL": "Radial"
+      },
+      "table": {
+        "TABLE": "Table",
+        "STANDARD": "Standard",
+        "EXTENDED": "Extended",
+        "DATATABLE": "Datatable"
+      },
+      "map": {
+        "MAP": "Maps",
+        "GOOGLE": "Google Map",
+        "VECTOR": "Vector Map"
+      },
+      "extra": {
+        "EXTRA": "Extras",
+        "MAILBOX": "Mailbox",
+        "TIMELINE": "Timeline",
+        "CALENDAR": "Calendar",
+        "INVOICE": "Invoice",
+        "SEARCH": "Search",
+        "TODO": "Todo List",
+        "PROFILE": "Profile"
+      },
+      "pages": {
+        "PAGES": "Pages",
+        "LOGIN": "Login",
+        "REGISTER": "Register",
+        "RECOVER": "Recover password",
+        "PROFILE": "Profile",
+        "LOCK": "Lock",
+        "STARTER": "Starter Template"
+      }
+    }
+  }
+}

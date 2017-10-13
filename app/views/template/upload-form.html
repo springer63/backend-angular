@@ -1,0 +1,30 @@
+<div class="panel-body">
+    <form name="uploadForm" role="form" class="form-horizontal" ng-submit="uc.save(editForm)">
+        <input filestyle="" type="file" onchange='angular.element(this).scope().fileChanged(this)' class="form-control" id="filestyle-2" tabindex="-1" style="position: absolute; clip: rect(0px 0px 0px 0px);">
+        <div class="bootstrap-filestyle input-group">
+            <input type="text" class="form-control " disabled="" ng-model="file.name"/>
+            <span class="group-span-filestyle input-group-btn" tabindex="0">
+                <label for="filestyle-2" class="btn btn-default ">
+                    <span class="icon-folder"></span>&nbsp;&nbsp; 选择文件
+                </label>
+            </span>
+        </div>
+        OR
+        <div class="bootstrap-filestyle input-group">
+            <input type="text" class="form-control">
+            <span class="group-span-filestyle input-group-btn" tabindex="0">
+                <label class="btn btn-default">
+                    <span class="icon-link"></span>&nbsp;&nbsp; 输入链接
+                </label>
+            </span>
+        </div>
+        <div style="margin-top: 10px">
+            <button id="uploadBtn" type="button" class="btn btn-info" ng-click="upload()">
+                <span class="icon-cloud-upload mr"></span>上传
+            </button>
+            <button type="button" class="btn btn-warning" ng-click="cancel()">
+                <span class="icon-close mr"></span>取消
+            </button>
+        </div>
+    </form>
+</div>

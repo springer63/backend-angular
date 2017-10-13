@@ -1,0 +1,32 @@
+<h3>推送列表</h3>
+<div ng-controller="pushController">
+    <div class="panel panel-default" class="container-fluid">
+        <div class="panel-body" ng-show="pushUc.editStatus == 0" >
+            <button type="button" class="mb-sm btn btn-purple" ng-click="pushUc.add()">新增</button>
+            <search-form ng-model="pushUc"></search-form>
+            <div ui-grid="pushUc.gridOptions" ui-grid-pagination ui-grid-selection class="table-uigrid"></div>
+        </div>
+        <div class="panel-body" ng-show="pushUc.editStatus==1 || pushUc.editStatus == 2">
+            <uc-form ng-model="pushUc"></uc-form>
+        </div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="userList.html">
+    <div>
+        <div class="panel panel-default">
+            <div class="panel-body" ng-show="uc.editStatus == 0" >
+                <search-form ng-model="uc"></search-form>
+                <div ui-grid="uc.gridOptions" ui-grid-pagination ui-grid-selection class="table-uigrid"></div>
+                <div style="margin-top: 10px; text-align: center">
+                    <button id="uploadBtn" type="button" class="btn btn-info" ng-click="selectUser()">
+                        <span class="icon-cloud-upload mr"></span>确定
+                    </button>
+                    <button type="button" class="btn btn-warning" ng-click="cancel()">
+                        <span class="icon-close mr"></span>取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

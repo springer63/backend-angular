@@ -1,0 +1,16 @@
+<form name="editForm" role="form" class="form-horizontal" ng-submit="uc.save(editForm)">
+    <span ng-fields="uc.editFields" ng-model="uc.editObj"  ng-uc="uc">
+        <div class="form-group">
+            <label class="col-sm-2 control-label"></label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control form-control-rounded"/>
+            </div>
+         </div>
+    </span>
+    <div class="form-group">
+        <div class="col-sm-6 control-label">
+            <input type="submit" class="btn btn-oval btn-primary" value="保存"/>
+            <button ng-click="uc.cancel(editForm)" class="btn btn-oval btn-default" type="button">取消</button>
+        </div>
+    </div>
+</form>
